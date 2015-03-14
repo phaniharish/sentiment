@@ -1,0 +1,213 @@
+checking string input: RT : Radio Host Cuts Off Wingnut Guest For Lying About Obama
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1" sentimentValue="1" sentiment="Negative">
+        <tokens>
+          <token id="1">
+            <word>RT</word>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>:</word>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>:</POS>
+          </token>
+          <token id="3">
+            <word>Radio</word>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>Host</word>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>Cuts</word>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>Off</word>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>Wingnut</word>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>Guest</word>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>For</word>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>Lying</word>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>About</word>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="12">
+            <word>Obama</word>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (NN RT)) (: :) (NP (NNP Radio) (NNP Host) (NNP Cuts))) (PP (IN Off) (NP (NP (NNP Wingnut) (NNP Guest)) (PP (IN For) (NP (NNP Lying))))) (PP (IN About) (NP (NNP Obama))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">RT</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">RT</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Cuts</governor>
+            <dependent idx="3">Radio</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Cuts</governor>
+            <dependent idx="4">Host</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">RT</governor>
+            <dependent idx="5">Cuts</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">Cuts</governor>
+            <dependent idx="6">Off</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Guest</governor>
+            <dependent idx="7">Wingnut</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">Off</governor>
+            <dependent idx="8">Guest</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">Cuts</governor>
+            <dependent idx="9">For</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">For</governor>
+            <dependent idx="10">Lying</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">Cuts</governor>
+            <dependent idx="11">About</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">About</governor>
+            <dependent idx="12">Obama</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">RT</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">RT</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Cuts</governor>
+            <dependent idx="3">Radio</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Cuts</governor>
+            <dependent idx="4">Host</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">RT</governor>
+            <dependent idx="5">Cuts</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Guest</governor>
+            <dependent idx="7">Wingnut</dependent>
+          </dep>
+          <dep type="prep_off">
+            <governor idx="5">Cuts</governor>
+            <dependent idx="8">Guest</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">Cuts</governor>
+            <dependent idx="10">Lying</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="5">Cuts</governor>
+            <dependent idx="12">Obama</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">RT</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">RT</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Cuts</governor>
+            <dependent idx="3">Radio</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Cuts</governor>
+            <dependent idx="4">Host</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">RT</governor>
+            <dependent idx="5">Cuts</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Guest</governor>
+            <dependent idx="7">Wingnut</dependent>
+          </dep>
+          <dep type="prep_off">
+            <governor idx="5">Cuts</governor>
+            <dependent idx="8">Guest</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">Cuts</governor>
+            <dependent idx="10">Lying</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="5">Cuts</governor>
+            <dependent idx="12">Obama</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>
+
