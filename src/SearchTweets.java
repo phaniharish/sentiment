@@ -106,20 +106,32 @@ public class SearchTweets implements Runnable{
                     	sentiment[4] = 0;
                     }
                     System.out.println(t1);
-                    
+                    boolean flag1 = false;
+                    boolean flag2 = false;
                     for(StanfordCoreNlpDemo.sentiment i : val)
                     {
                     	//System.out.println("in tweets" + i.value);
                     	sentiment[i.value]++;
                     	total++;
                     	
-                    	System.out.print(i.value + "  ");
+                    	if((i.value==0)||(i.value==1)){
+                    		flag1=true;
+                    		if(i.value==0)
+                    			flag2=true;
+                    	}
                     }
                     
                     //System.out.println(Arrays.toString(sentiment));
                     String mess = "tw: " + (sentiment[0]/total)*100 + " " + (sentiment[1]/total)*100 + " " + (sentiment[2]/total)*100 + " " + (sentiment[3]/total)*100 + " " + (sentiment[4]/total)*100; 
  //                   System.out.println(mess);
                     sess.sendString(mess);
+                    if(flag1){
+                    	if(flag2)
+                    	sess.sendString("mean: "+t1);
+                    	else
+                    		sess.sendString("mean2: " + t1);
+                    }
+                    
                 }
             } while((query = result.nextQuery()) != null);
             System.exit(0);

@@ -17,11 +17,11 @@ public class WebDataClient {
 		Thread t1 = new Thread(tweeter);
 		t1.start();
 		
-		
+		/*
 		SearchFacebook faceboook = new SearchFacebook(query, twisocket);
 		Thread t2 = new Thread(faceboook);
 		t2.start();
-		
+		*/
 	}
 
 }
